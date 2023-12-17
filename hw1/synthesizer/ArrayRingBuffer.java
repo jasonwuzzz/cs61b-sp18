@@ -1,5 +1,5 @@
 // Make sure to make this class a part of the synthesizer package
- package synthesizer;
+package synthesizer;
 import java.util.Iterator;
 
 //Make sure to make this class and all of its methods public
@@ -50,7 +50,7 @@ public class ArrayRingBuffer<T>  extends AbstractBoundedQueue<T> {
      * covered Monday.
      */
     public T dequeue() {
-        // TODO: Dequeue the first item. Don't forget to decrease fillCount and update first.
+        // Dequeue the first item. Don't forget to decrease fillCount and update first.
         if (!isEmpty()) {
             T result = rb[first];
             first = (first + 1) % capacity;
