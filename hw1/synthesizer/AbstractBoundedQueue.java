@@ -2,7 +2,8 @@ package synthesizer;
 
 /**
  * Provide a protected FILLCOUNT and CAPACITY variable that all subclasses will inherit,
- * as well as called “getter” methods capacity() and fillCount() that return capacity and fillCount, respectively.
+ * as well as called “getter” methods capacity() and fillCount() that return capacity
+ * and fillCount, respectively.
  * This saves a tiny amount of work for future implementations.
  *
  *  In practice, large Java libraries often have a hierarchy of interfaces,
@@ -22,4 +23,5 @@ public abstract class AbstractBoundedQueue<T> implements BoundedQueue<T> {
     public int fillCount() {
         return fillCount;
     }
+
 }
